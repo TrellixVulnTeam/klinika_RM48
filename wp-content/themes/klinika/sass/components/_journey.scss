@@ -1,0 +1,118 @@
+@import '../variables/_colors.scss';
+
+.journey {
+    padding-top: 125px;
+    padding-bottom: 125px; 
+    &__title {
+        font: normal normal 800 46px/46px 'SofiaPro';
+    }
+    &__description {
+        padding-top: 30px;
+        font: normal normal 500 22px/32px 'SofiaPro';
+    }
+    &__first-block {
+        padding-bottom: 85px;
+        &-title {
+            font: normal normal 800 32px/32px 'SofiaPro';
+            padding-top: 65px;
+            padding-bottom: 45px;
+        }
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &-from, &-to {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 177px;
+            height: 177px;
+            padding: 30px 15px;
+            text-align: center;
+            font: normal normal 800 20px/26px 'SofiaPro';
+            border-radius: 50%;
+        }
+        &-from {
+            color: $color__journey__from;
+            border: 4px solid $color__journey__from;
+        }
+        &-to {
+            color: $color__journey__to;
+            border: 4px solid $color__journey__to;
+        }
+        &-arrow {
+            background: url('images/arrow-dots.webp') no-repeat center / contain;
+            width: 135px;
+            height: 35px;
+            margin-left: 11px;
+            margin-right: 11px;
+        }
+        &-percents {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    &__percents {
+        position: relative;
+        width: 65px;
+        font: normal normal 800 20px/24px 'SofiaPro';
+        margin-right: 17px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -20px;
+            width: 2px;
+            height: 100%;
+            background: $color__journey__border;
+        }
+        span {
+            font: normal normal 500 65px/40px 'SofiaPro';
+        }
+    }
+    &__percents-description {
+        padding-left: 20px;
+        font: normal normal bold 20px/24px 'SofiaPro';
+    }
+    &__second-block {
+        &-title {
+            font: normal normal bold 32px/32px 'SofiaPro';
+            padding-bottom: 60px;
+        }
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &-from, &-to {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 210px;
+            height: 210px;
+            padding: 30px 20px;
+            text-align: center;
+            font: normal normal 800 20px/26px 'SofiaPro';
+            border-radius: 50%;
+            color: #fff;
+        }
+        &-from {
+            background-color: $color__journey__from;
+            border: 4px solid $color__journey__from;
+        }
+        &-to {
+            background-color: $color__journey__to;
+            border: 4px solid $color__journey__to;
+        }
+        &-arrow {
+            display: flex;
+            width: calc(100% - 320px);
+            height: 306px;
+            background: url('images/graph.svg') no-repeat center / contain;
+        }
+    }
+}

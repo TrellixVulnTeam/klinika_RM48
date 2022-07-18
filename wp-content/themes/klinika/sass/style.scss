@@ -1,0 +1,111 @@
+/*!
+Theme Name: Klinika
+Theme URI: http://#
+
+Author: Olena Kiper
+Author URI: http://#
+Description: Klinika theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: kl
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Klinika is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@font-face {
+	font-family: "Cervanttis";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/Cervanttis/Cervanttis.woff") format("woff"),
+		url("./fonts/Cervanttis/Cervanttis.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "SofiaPro";
+	font-style: normal;
+	font-weight: 100;
+	src: url("./fonts/SofiaPro-ExtraLight/SofiaPro-ExtraLight.woff2") format("woff2"),
+		 url("./fonts/SofiaPro-ExtraLight/SofiaPro-ExtraLight.woff") format("woff");
+}
+@font-face {
+	font-family: "SofiaPro";
+	font-style: normal;
+	font-weight: 200;
+	src: url("./fonts/SofiaPro-Light/SofiaPro-Light.woff2") format("woff2"),
+		 url("./fonts/SofiaPro-Light/SofiaPro-Light.woff") format("woff");
+}
+@font-face {
+	font-family: "SofiaPro";
+	font-style: normal;
+	font-weight: 600;
+	src: url("./fonts/SofiaPro-Medium/SofiaPro-Medium.woff2") format("woff2"),
+		 url("./fonts/SofiaPro-Medium/SofiaPro-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: "SofiaPro";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./fonts/SofiaPro-Regular/SofiaPro-Regular.woff2") format("woff2"),
+		 url("./fonts/SofiaPro-Regular/SofiaPro-Regular.woff") format("woff");
+}
+
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1870px) !default;
+
+@media screen and (min-width: 960px) {
+	.container-960 {
+		max-width: 1350px!important;
+		margin: 0 auto;
+	}
+}
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/carousel";
+
+
+
+@import "generic/box-sizing";
+@import "generic/normalize";
+
+@import "./variables/icon";
+@import "./variables/colors";
+
+body {
+	font-family: 'SofiaPro';
+	font-size: 14px;
+	color: $color__text;
+}
+.bold {
+	font-weight: 800;
+}
+.section-text-image {
+	padding-top: 140px;
+	padding-bottom: 150px;
+	background: #F4F4F1;
+	.text-with-image__image {
+		max-width: 500px;
+		max-height: 500px;
+		top: 0;
+	}
+}
+
+@import "components/components"; 

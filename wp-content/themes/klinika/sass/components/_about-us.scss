@@ -1,0 +1,8 @@
+@import '../variables/_colors';
+.about-us {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__item {
+        padding-bottom: 64px; 
+    }
+}

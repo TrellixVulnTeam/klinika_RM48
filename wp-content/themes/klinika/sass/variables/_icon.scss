@@ -1,0 +1,26 @@
+.icon {
+    position: relative;
+    display: inline-block;
+    &-phone {
+        width: 27px;
+        height: 27px;
+        background: url('images/phone-waves.svg') no-repeat center / contain;
+    }
+    &-scroller {
+        width: 23px;
+        height: 26px;
+        background: url('images/scroll-arrow.svg')no-repeat center / contain;
+    }
+    &-dislike {
+        background: url('./images/thumb-down.svg') no-repeat center / contain;
+    }
+    &-like {
+        background: url('./images/thumb-up.svg') no-repeat center / contain;
+    }
+    &-lock {
+        background: url('./images/ico-lock.svg') no-repeat center / contain;
+    }
+    &-list {
+        background: url('./images/list-ico-white.svg') no-repeat center / contain;
+    }
+}

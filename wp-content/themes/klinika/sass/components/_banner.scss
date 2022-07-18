@@ -1,0 +1,111 @@
+@import '../variables/colors';
+
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    min-height: 700px;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('images/bg-header.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 700px;
+        height: 600px;
+        left: -490px;
+    }
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__pre-title {
+        font: normal normal 600 26px/25px 'SofiaPro';
+        color: $color__banner-pre-title;
+    }
+    &__title {
+        font: normal normal bold 60px/75px 'SofiaPro';
+        color: $color__banner-title;
+        margin-top: 15px;
+    }
+    &__scroller {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 85px;
+        margin-bottom: 15px;
+    }
+    &__scroller-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 121px; 
+        height: 121px;
+        background: url('images/bg-scroll-arrow.webp') no-repeat center / contain;
+        padding: 20px 20px 14px;
+    }
+    &__scroller-text {
+        position: relative;
+        margin-left: -30px;
+        font: normal normal normal 18px/40px 'SofiaPro';
+        color: $color__banner-scroller;
+    }
+    &__banner__image-wrapper {
+        position: relative;
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        height: 700px;
+        right: -5%;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .carousel-fade {
+//     .carousel-inner {
+//         .item {
+//             transition-property: opacity;
+//         }
+
+//         .item,
+//         .active.left,
+//         .active.right {
+//             opacity: 0;
+//         }
+
+//         .active,
+//         .next.left,
+//         .prev.right {
+//             opacity: 1;
+//         }
+
+//         .next,
+//         .prev,
+//         .active.left,
+//         .active.right {
+//             left: 0;
+//             transform: translate3d(0, 0, 0);
+//         }
+//     }
+
+//     .carousel-control {
+//         z-index: 2;
+//     }
+// }

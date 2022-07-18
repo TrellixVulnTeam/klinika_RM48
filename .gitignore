@@ -1,0 +1,10 @@
+site/
+docker/database/*.sql
+docker/ssl/
+docker/logs/
+.vscode/
+.idea
+.history
+dist/
+
+

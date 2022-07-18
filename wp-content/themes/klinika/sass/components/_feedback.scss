@@ -1,0 +1,116 @@
+@import '../variables/_colors.scss';
+
+.feedback {
+    padding-top: 125px;
+    padding-bottom: 145px;
+    background-color: $background__feedback;
+    color: #fff;
+    &__title {
+        font: normal normal bold 46px/46px 'SofiaPro'; 
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    &__description {
+        font: normal normal normal 26px/40px 'SofiaPro';
+        padding-bottom: 60px;
+        span {
+            display: block;
+            position: relative;
+            max-width: 680px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &__form {
+        color: $color_feedback_text;
+        font: normal normal medium 20px/32px 'SofiaPro';
+        form {
+            background: $background__feedback-form;
+            border-radius: 10px;
+            padding: 36px 51px;
+        }
+    }
+    &__content-image img {
+        width: 100%;
+        max-width: 440px;
+    }
+    &__list-title {
+        font: normal normal bold 22px/24px 'SofiaPro';
+        padding-top: 35px;
+    }
+    &__list {
+        font: normal normal 500 22px/30px 'SofiaPro';
+        list-style: none;
+        padding-left: 45px;
+        max-width: 500px;
+    }
+    &__list-item {
+        position: relative;
+        padding-bottom: 26px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -40px;
+            width: 30px;
+            height: 30px;
+            background: url('./images/list-ico-white.svg') no-repeat center / contain;
+        }
+    }
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 90px;
+    }
+    &__logo img {
+        height: 130;
+        width: auto;
+    }
+}
+
+.form {
+    &__title {
+        font: normal normal bold 30px/32px 'SofiaPro';
+        color: $color_feedback_title;
+        padding-bottom: 30px;
+    }
+    input, textarea {
+        background-color: #fff;
+        box-shadow: 0px 2px 2px #0000000D;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font: normal normal medium 20px/32px 'SofiaPro';
+        padding: 10px 20px;
+        margin-top: 7px;
+    }
+    span {
+        display: block;
+    }
+    &__input {
+        padding-top: 21px;
+    }
+    &__button input {
+        background: $background__feedback-btn;
+        font: normal normal bold 20px/25px 'SofiaPro';
+        color: #fff;
+        border-radius: 32px;
+        padding: 19px 30px;
+    }
+    &__data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font: normal normal 600 16px/18px 'SofiaPro';
+        color: $background__feedback-data;
+        text-decoration: none;
+        span {
+            display: inline-block;
+            width: 20px;
+            height: 22px;
+            margin-right: 11px;
+        }
+    }
+}

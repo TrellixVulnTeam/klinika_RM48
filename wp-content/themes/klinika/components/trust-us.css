@@ -1,0 +1,43 @@
+.trust-us {
+	padding: 67px 0 42px;
+	background: #f9f9f7;
+}
+
+.trust-us__title {
+	font: normal normal 600 26px/25px 'SofiaPro';
+	color: #64666B;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.trust-us__logo-list {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trust-us__logo-list:before, .trust-us__logo-list::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 100%;
+}
+
+.trust-us__logo-list::before {
+	left: -10px;
+	background: linear-gradient(90deg, #f9f9f7, #f9f9f7, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.trust-us__logo-list::after {
+	right: -10px;
+	background: linear-gradient(270deg, #f9f9f7, #f9f9f7, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.trust-us__logo-item {
+	width: 180px;
+}
+
+/*# sourceMappingURL=trust-us.css.map */

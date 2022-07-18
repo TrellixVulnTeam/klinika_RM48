@@ -1,0 +1,20 @@
+@import '../variables/_colors.scss';
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $background__footer;
+    color: #fff; 
+    font: normal normal normal 18px/30px 'SofiaPro';
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
